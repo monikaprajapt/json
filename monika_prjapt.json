@@ -1,0 +1,220 @@
+[
+    {
+        "id": "3143",
+        "parent_exercise_id": "3143",
+        "course_id": "122",
+        "name": "Data Types",
+        "slug": "dataTypes__DataTypes/intro",
+        "sequence_num": 0,
+        "review_type": "manual",
+        "submission_type": null,
+        "github_link": "https://github.com/navgurukul/newton/tree/master/dataTypes/DataTypes/intro.md",
+        "solution": null,
+        "content": [
+            {
+                "type": "markdown",
+                "value": "## What is a Data Type ?\n\n\nAs we read the English book, every word in it is English, means the *information is in English*. Whatever knowledge we are taking from the book is *data*, and the language is its *type*.\n\n\n\n\n`Data type` indicates the type of `information`.\n\n\n\nThe `Data type` represents a type of value that determines which operation can be performed per data. For example, `numeric`, `non-numeric` or `Boolean (`true`/`false`)` data are the most commonly used data types.\n\n\n\n\nData Type is a very important concept in `Programming`.\n\n\n\nWe can store different type of data type in a `variable`. Like `Numeric`, `Characters`. Every `programming` language has data types.\n\n\n\n### Below are some data types in `Python`\n\n\n\n```\nNumeric type - (Integer, Float, complex)\n\nText type - (String)\n\nBoolean type - (True, False)\n\nSequence type - (List, Tuple, Range)\n```\n"
+            }
+        ]
+    },
+    {
+        "id": "3144",
+        "parent_exercise_id": "3144",
+        "course_id": "122",
+        "name": "Conversion",
+        "slug": "dataTypes__type-conversion/type-conversion-intro",
+        "sequence_num": 100,
+        "review_type": "manual",
+        "submission_type": null,
+        "github_link": "https://github.com/navgurukul/newton/tree/master/dataTypes/type-conversion/type-conversion-intro.md",
+        "solution": null,
+        "content": [
+            {
+                "type": "markdown",
+                "value": "  \n### Note : \n\n\n\nRemember to run all the `code` examples and see them. Only by trying them you will be able to learn.\n\n\n\n## `What is Type `Conversion``?\n\n\n\nIn the previous sections, we understood that there are different data types in `Python`. Some of the types we have read about are :\n\n\n\n1.`Integer`   \n2.`Float`   \n3.`String`\n\n\n\n#### Examples :- \n\n\n\nRead the examples carefully.\n\n\n\n"
+            },
+            {
+                "type": "python",
+                "value": {
+                    "code": "# integer\nage = 27\ntotal_apples = 100\n\n# float\nweight = 10.5\narea = 120.56\n\n# string\nday = \"Wednesday\"\nname = \"Mahatma Gandhi\"\na = \"Y\"",
+                    "testCases": []
+                }
+            },
+            {
+                "type": "markdown",
+                "value": "\n  \nWe can convert our data from one `type` to another `data type` in `python`. This will come in very handy in the future because we will often have data in one type and we will have to convert to another type. In `Python` we can do this with the help of `type `conversions`` :-\n\n\n\n1.`Float to `String``\n2.`Float to `Integer``\n3.`Integer to `String``\n4.`Integer to `Float``\n5.`String to `Float`` \n6.`String to `Integer``\n\n\n\n\n### `String to `Integer` and `String` to `Float``\n\n\nNow let us see how to convert to `INTEGER`. `Type cast 12` to `Python` `Integer` and store `12`.\n\n\n\n#### Examples :- \n\n\n\n"
+            },
+            {
+                "type": "python",
+                "value": {
+                    "code": "var_a = '12'\nvar_b = int(var_a)\nprint (type(var_a))\nprint (type(var_b))\nprint (var_a + var_a)\nprint (var_b + var_b)",
+                    "testCases": []
+                }
+            },
+            {
+                "type": "markdown",
+                "value": "\n\n`Python` does not know how to extract `integers` from `12houses`.\n\n"
+            },
+            {
+                "type": "python",
+                "value": {
+                    "code": "var_a = '12houses'\nvar_b = int(var_a)\nprint (type(var_a))\nprint (type(var_b))",
+                    "testCases": []
+                }
+            },
+            {
+                "type": "markdown",
+                "value": "\n\n`Python` tries to convert `STRING to `INTEGER` `but throws an `error` if it is even a bit confusing. Ex :- `Python` cannot convert `12.2`, and `12houses` to `integer` but can do the same for `12`.\n\n\n\n`Python` does not know how to extract `integers` from `12`\n\n"
+            },
+            {
+                "type": "python",
+                "value": {
+                    "code": "var_a = '12.2'\nvar_b = int(var_a)\nprint (type(var_a))\nprint (type(var_b))",
+                    "testCases": []
+                }
+            },
+            {
+                "type": "markdown",
+                "value": "\n\n### `Float to `Integer` and `Float` to `String``\n\n\n\nConverts any `FLOAT` to `Python` `INTEGER` by removing its decimal part.\n\n\n\n#### Examples :- \n\n\n\n"
+            },
+            {
+                "type": "python",
+                "value": {
+                    "code": "var_a = 12.2\nvar_b = int(var_a)\nprint (type(var_a))\nprint (type(var_b))\nprint (var_b)",
+                    "testCases": []
+                }
+            },
+            {
+                "type": "markdown",
+                "value": "\n\nNow we will learn to `typecast` in `FLOAT`. This is similar to `typecasting` to `INTEGER`. See it yourself.\n\n\n\n"
+            },
+            {
+                "type": "python",
+                "value": {
+                    "code": "var_a = '12'\nvar_b = float(var_a)\nprint (type(var_a))\nprint (type(var_b))\nprint (var_a + var_a)\nprint (var_b + var_b)",
+                    "testCases": []
+                }
+            },
+            {
+                "type": "python",
+                "value": {
+                    "code": "var_a = '12.2'\nvar_b = float(var_a)\nprint (type(var_a))\nprint (type(var_b))",
+                    "testCases": []
+                }
+            },
+            {
+                "type": "markdown",
+                "value": "\n\n`Python` does not know how to extract `FLOAT` from `12houses`.\n\n\n\n"
+            },
+            {
+                "type": "python",
+                "value": {
+                    "code": "var_a = '12houses'\nvar_b = float(var_a)\nprint (type(var_a))\nprint (type(var_b))",
+                    "testCases": []
+                }
+            },
+            {
+                "type": "markdown",
+                "value": "\n\n### `Integer to `Float` and `Integer` to `String``\n\n\n\n  \n`Python` simply adds the decimal point when we convert `INTEGER` to `FLOAT`.\n\n\n\n#### Examples :- \n\n\n\n"
+            },
+            {
+                "type": "python",
+                "value": {
+                    "code": "var_a = 12\nvar_b = float(var_a)\nprint (type(var_a))\nprint (type(var_b))\nprint (var_b)",
+                    "testCases": []
+                }
+            },
+            {
+                "type": "markdown",
+                "value": "\n\nLook carefully here that `Python` adds `.0` to the last. Try converting a `FLOAT 12.2` to an `INTEGER` in `Python`. Try and understand what is happening.\n\n"
+            }
+        ]
+    },
+    {
+        "id": "3145",
+        "parent_exercise_id": "3145",
+        "course_id": "122",
+        "name": "Debug  Code",
+        "slug": "dataTypes__Debug/intro",
+        "sequence_num": 200,
+        "review_type": "manual",
+        "submission_type": null,
+        "github_link": "https://github.com/navgurukul/newton/tree/master/dataTypes/Debug/intro.md",
+        "solution": null,
+        "content": [
+            {
+                "type": "markdown",
+                "value": "## `Debug `Code``\n\n\n\nNow we will `debug` the `code` related to data types.\n\n\n\nA.\n\n\n\n"
+            },
+            {
+                "type": "python",
+                "value": {
+                    "code": "a = \"Megha\"\nprint a",
+                    "testCases": []
+                }
+            },
+            {
+                "type": "markdown",
+                "value": "\n\nB. \n\n\n\n"
+            },
+            {
+                "type": "python",
+                "value": {
+                    "code": "a=\"navgurukul\"\nb= 2016\nprint(a+\",\" + b + \"me shuru hua tha\")",
+                    "testCases": []
+                }
+            },
+            {
+                "type": "markdown",
+                "value": "C. \n\n\n\n"
+            },
+            {
+                "type": "python",
+                "value": {
+                    "code": "a=\"navgurukul\"\nb=13\nprint(a+b)",
+                    "testCases": []
+                }
+            },
+            {
+                "type": "markdown",
+                "value": "\n\nD.\n\n\n\n"
+            },
+            {
+                "type": "python",
+                "value": {
+                    "code": "a=\"12\"\nb=13.1\nprint(a+b)",
+                    "testCases": []
+                }
+            },
+            {
+                "type": "markdown",
+                "value": "\n\nE.\n\n\n\n"
+            },
+            {
+                "type": "python",
+                "value": {
+                    "code": "a = boolean(\"\")\nb = boolean(\" \")\nprint(a+b)",
+                    "testCases": []
+                }
+            }
+        ]
+    },
+    {
+        "id": "3146",
+        "parent_exercise_id": "3146",
+        "course_id": "122",
+        "name": "Code Output",
+        "slug": "dataTypes__Output/intro",
+        "sequence_num": 300,
+        "review_type": "manual",
+        "submission_type": null,
+        "github_link": "https://github.com/navgurukul/newton/tree/master/dataTypes/Output/intro.md",
+        "solution": null,
+        "content": [
+            {
+                "type": "markdown",
+                "value": "## `Code` `Output` \n\n\n\nNow we will do some questions related to data types, which will help us in better understanding of the topic.\n\n"
+            }
+        ]
+    }
+]
